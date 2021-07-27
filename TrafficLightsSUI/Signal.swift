@@ -10,8 +10,8 @@ import SwiftUI
 struct Signal: View {
     var color: TrafficLightsColor = .red
     var state: TrafficLightsState = .off
-    var lineWidth: CGFloat = 1
-    
+   
+    private let lineWidth: CGFloat = 1
     private let circleSize: CGFloat = 130
     
     var body: some View {
@@ -26,7 +26,6 @@ struct Signal: View {
     }
     
     private func signalCircle(color: Color, opacity: Double, circleSize: CGFloat) -> some View {
-        
         Circle()
             .stroke(color.opacity(0.4), lineWidth: lineWidth)
             .background(

@@ -17,7 +17,7 @@ enum TrafficLightsState: Double {
 }
 
 struct ContentView: View {
-    @State var currentLight: TrafficLightsColor?
+    @State private var currentLight: TrafficLightsColor?
     @State private var isStarted = false
     
     private let signals: [TrafficLightsColor] = [.red, .yellow, .green]
