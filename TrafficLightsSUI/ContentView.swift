@@ -42,11 +42,11 @@ struct ContentView: View {
                         
                         switch currentLight {
                         case .red:
-                            self.currentLight = .yellow
+                            currentLight = .yellow
                         case .yellow:
-                            self.currentLight = .green
+                            currentLight = .green
                         case .green, .none:
-                            self.currentLight = .red
+                            currentLight = .red
                         }
                     }, label: {
                         Text(isStarted ? "Next" : "Start")
