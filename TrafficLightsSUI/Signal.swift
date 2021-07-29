@@ -17,23 +17,14 @@ struct Signal: View {
     var body: some View {
         switch color {
         case .red:
-            signalCircle(color: .red, opacity: state.rawValue, circleSize: circleSize)
+            SignalCircle(color: .red, opacity: state.rawValue)
         case .yellow:
-            signalCircle(color: .yellow, opacity: state.rawValue, circleSize: circleSize)
+            SignalCircle(color: .yellow, opacity: state.rawValue)
         case .green:
-            signalCircle(color: .green, opacity: state.rawValue, circleSize: circleSize)
+            SignalCircle(color: .green, opacity: state.rawValue)
         }
     }
-    
-    private func signalCircle(color: Color, opacity: Double, circleSize: CGFloat) -> some View {
-        Circle()
-            .stroke(color.opacity(0.4), lineWidth: lineWidth)
-            .background(
-                Circle().fill(RadialGradient(gradient: Gradient(colors: [.white, color]), center: .center, startRadius: 0, endRadius: 100))
-                    .opacity(opacity))
-            .frame(width: circleSize, height: circleSize)
-            .shadow(color: color, radius: 36)
-    }
+   
 }
 
 struct Signal_Previews: PreviewProvider {

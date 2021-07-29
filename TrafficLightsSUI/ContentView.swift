@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-enum TrafficLightsColor {
-    case red, yellow, green
-}
-
-enum TrafficLightsState: Double {
-    case on = 1.0
-    case off = 0.2
-}
-
 struct ContentView: View {
     @State private var currentLight: TrafficLightsColor?
     @State private var isStarted = false

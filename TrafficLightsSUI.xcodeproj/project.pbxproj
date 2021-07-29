@@ -12,6 +12,8 @@
 		A271587626AFA85100DDF92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A271587526AFA85100DDF92F /* Assets.xcassets */; };
 		A271587926AFA85100DDF92F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A271587826AFA85100DDF92F /* Preview Assets.xcassets */; };
 		A271588126AFA8FD00DDF92F /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271588026AFA8FD00DDF92F /* Signal.swift */; };
+		A271588726B2BB5D00DDF92F /* SignalCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271588626B2BB5D00DDF92F /* SignalCircle.swift */; };
+		A271588A26B2BD6F00DDF92F /* TrafficLightsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271588926B2BD6F00DDF92F /* TrafficLightsEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A271587826AFA85100DDF92F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A271587A26AFA85100DDF92F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A271588026AFA8FD00DDF92F /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		A271588626B2BB5D00DDF92F /* SignalCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalCircle.swift; sourceTree = "<group>"; };
+		A271588926B2BD6F00DDF92F /* TrafficLightsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		A271587026AFA84A00DDF92F /* TrafficLightsSUI */ = {
 			isa = PBXGroup;
 			children = (
+				A271588826B2BD5C00DDF92F /* Model */,
 				A271587126AFA84A00DDF92F /* TrafficLightsSUIApp.swift */,
 				A271587326AFA84A00DDF92F /* ContentView.swift */,
 				A271587526AFA85100DDF92F /* Assets.xcassets */,
 				A271587A26AFA85100DDF92F /* Info.plist */,
 				A271587726AFA85100DDF92F /* Preview Content */,
 				A271588026AFA8FD00DDF92F /* Signal.swift */,
+				A271588626B2BB5D00DDF92F /* SignalCircle.swift */,
 			);
 			path = TrafficLightsSUI;
 			sourceTree = "<group>";
@@ -70,6 +76,14 @@
 				A271587826AFA85100DDF92F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A271588826B2BD5C00DDF92F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A271588926B2BD6F00DDF92F /* TrafficLightsEnum.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A271587426AFA84A00DDF92F /* ContentView.swift in Sources */,
+				A271588726B2BB5D00DDF92F /* SignalCircle.swift in Sources */,
+				A271588A26B2BD6F00DDF92F /* TrafficLightsEnum.swift in Sources */,
 				A271588126AFA8FD00DDF92F /* Signal.swift in Sources */,
 				A271587226AFA84A00DDF92F /* TrafficLightsSUIApp.swift in Sources */,
 			);
